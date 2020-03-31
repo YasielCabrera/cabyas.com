@@ -1,4 +1,6 @@
-# [overreacted.io](https://overreacted.io/)
+# [cabyas.com](https://cabyas.com/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cc6229f-9e1f-41d4-bcbf-ad10b807a8f7/deploy-status)](https://app.netlify.com/sites/yasiel-blog/deploys)
 
 My personal blog. Forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog). Syntax theme based on [Sarah Drasner's Night Owl](https://github.com/sdras/night-owl-vscode-theme/) with small tweaks.
 

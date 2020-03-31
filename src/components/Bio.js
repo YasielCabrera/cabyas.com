@@ -24,8 +24,8 @@ class Bio extends React.Component {
         />
         <p style={{ maxWidth: 310 }}>
           Personal blog by{' '}
-          <a href="https://mobile.twitter.com/yasiel9506">Yasiel Cabrera</a>.{' '}
-          Doesn't work?
+          <a href="https://mobile.twitter.com/yasiel9506">Yasiel Cabrera</a>.<br/>
+          How to...? 🤔
         </p>
       </div>
     );

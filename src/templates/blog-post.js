@@ -17,8 +17,8 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 
-const GITHUB_USERNAME = 'yasiel9506';
-const GITHUB_REPO_NAME = 'cabyas';
+const GITHUB_USERNAME = 'YasielCabrera';
+const GITHUB_REPO_NAME = 'cabyas.com';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -27,14 +27,39 @@ class Translations extends React.Component {
   render() {
     let { translations, lang, languageLink, editUrl } = this.props;
 
-    let readerTranslations = translations.filter(lang => lang !== 'ru');
+    let readerTranslations = translations.filter(lang => lang !== 'es');
+    let hasSpanishTranslation = translations.indexOf('es') !== -1;
 
     return (
       <div className="translations">
         <Panel style={{ fontFamily: systemFont }}>
           {translations.length > 0 && (
-            <React.Fragment>
-              <span>Translated by readers into: </span>
+            <span>
+              {hasSpanishTranslation && (
+                <span>
+                  Originally written in:{' '}
+                  {'en' === lang ? (
+                    <b>{codeToLanguage('en')}</b>
+                  ) : (
+                    <Link to={languageLink('en')}>English</Link>
+                  )}
+                  {' • '}
+                  {'es' === lang ? (
+                    <b>Español (Traducido por el autor)</b>
+                  ) : (
+                    <Link to={languageLink('es')}>
+                      Español (Traducido por el autor)
+                    </Link>
+                  )}
+                </span>
+              )}
+              {hasSpanishTranslation && readerTranslations.length > 0 && (
+                <>
+                  <br />
+                  <br />
+                  <span>Translated by readers into: </span>
+                </>
+              )}
               {readerTranslations.map((l, i) => (
                 <React.Fragment key={l}>
                   {l === lang ? (
@@ -45,7 +70,7 @@ class Translations extends React.Component {
                   {i === readerTranslations.length - 1 ? '' : ' • '}
                 </React.Fragment>
               ))}
-            </React.Fragment>
+            </span>
           )}
           {lang !== 'en' && (
             <>

@@ -11,6 +11,6 @@ Well, this post is my Hello world and not, it didn't work in my first try 😖, 
 
 I used [Dan Abramov](https://github.com/gaearon/)'s blog as template for this one, you know, don't reinvent the wheel, Thanks Dan 🙏🙏🙏
 
-Ohh look a [link](/hello-world/) that goes to 😏 ...this same post
+Ohh look, a [link](/hello-world/) that goes to 😏 ...this same post
 
-**Hello world** and... welcome!!! Really hope you like what you read here!
+**Hello world** and... welcome!!! Really hope you like what you'll read here!

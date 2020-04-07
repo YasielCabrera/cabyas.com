@@ -25,7 +25,7 @@ class Footer extends React.Component {
         </a>{' '}
         &bull;{' '}
         <a
-          href="https://github.com/yasiel9506"
+          href="https://github.com/YasielCabrera"
           target="_blank"
           rel="noopener noreferrer"
         >

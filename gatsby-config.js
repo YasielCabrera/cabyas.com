@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Cabyas',
     author: 'Yasiel Cabrera',
-    description: 'Personal blog by Yasiel Cabrera. I explain with words and code.',
+    description: 'Personal blog by Yasiel Cabrera. How to... why? 🤔 ',
     siteUrl: 'https://cabyas.com',
     social: {
       twitter: '@yasiel9506',
@@ -172,7 +172,7 @@ module.exports = {
         theme_color: `#2ad593`,
         display: `minimal-ui`,
         icon: `src/assets/icon.png`,
-        theme_color_in_head: true,
+        theme_color_in_head: false,
       },
     },
     `gatsby-plugin-react-helmet`,

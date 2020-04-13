@@ -9,6 +9,7 @@ import React from 'react';
 import SEO from '../components/SEO';
 import get from 'lodash/get';
 import { rhythm } from '../utils/typography';
+import defaultImage from '../assets/social-image.jpg'
 
 class BlogIndexTemplate extends React.Component {
   render() {
@@ -19,7 +20,7 @@ class BlogIndexTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO />
+        <SEO image={defaultImage} />
         <aside>
           <Bio />
         </aside>

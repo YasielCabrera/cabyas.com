@@ -17,6 +17,8 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 
+import defaultImage from '../assets/social-image.jpg'
+
 const GITHUB_USERNAME = 'YasielCabrera';
 const GITHUB_REPO_NAME = 'cabyas.com';
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -146,6 +148,7 @@ class BlogPostTemplate extends React.Component {
           lang={lang}
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler}
+          image={defaultImage}
           slug={post.fields.slug}
         />
         <main>

@@ -4,7 +4,7 @@ date: '2020-03-22'
 spoiler: Insolate your environments.
 ---
 
-Virtual environment are mechanisms used in python to insolate all the environments you could have in your PC. Then, dependencies you have in them doesn't have collisions between them. 
+Virtual environment are mechanisms used in python to isolate all the environments you could have in your PC. Then, dependencies you have in them doesn't have collisions between them. 
 
 Others platforms like Node install all their dependencies (packages) in a folder relative to the project (node_modules) where them are being used. In that way, any dependence have collisions with, maybe, the same dependence but different version in other project. Now imagine that all the dependencies in Node are globals, it's highly probable that you will have the same dependence with different version in two or more projects since even the most simple project with Node have thousands of packages.
 

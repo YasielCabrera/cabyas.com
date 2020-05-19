@@ -3,7 +3,7 @@ module.exports = {
     title: 'Cabyas',
     author: 'Yasiel Cabrera',
     description: 'Personal blog by Yasiel Cabrera. How to... why? 🤔 ',
-    siteUrl: 'https://cabyas.com',
+    siteUrl: 'https://www.cabyas.com',
     social: {
       twitter: '@yasiel9506',
     },
@@ -131,37 +131,37 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-ebook`,
-      options: {
-        filename: 'cabyas-ebook.epub',
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                author
-              }
-            }
-            allMarkdownRemark(
-              sort: { fields: frontmatter___date, order: ASC },
-              filter: { fields: { langKey: { eq: "en" } } }
-            ) {
-              edges {
-                node {
-                  id
-                  fileAbsolutePath
-                  rawMarkdownBody
-                  frontmatter {
-                    title
-                    date
-                  }
-                }
-              }
-            }
-          }`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-ebook`,
+    //   options: {
+    //     filename: 'cabyas-ebook.epub',
+    //     query: `
+    //       {
+    //         site {
+    //           siteMetadata {
+    //             title
+    //             author
+    //           }
+    //         }
+    //         allMarkdownRemark(
+    //           sort: { fields: frontmatter___date, order: ASC },
+    //           filter: { fields: { langKey: { eq: "en" } } }
+    //         ) {
+    //           edges {
+    //             node {
+    //               id
+    //               fileAbsolutePath
+    //               rawMarkdownBody
+    //               frontmatter {
+    //                 title
+    //                 date
+    //               }
+    //             }
+    //           }
+    //         }
+    //       }`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

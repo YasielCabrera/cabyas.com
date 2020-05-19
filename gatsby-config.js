@@ -190,5 +190,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [
+          `/confirm/`, 
+          `/react-components-unsubscribed/`, 
+          `/thanks/`
+        ]
+      }
+    }
   ],
 };

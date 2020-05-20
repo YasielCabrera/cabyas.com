@@ -7,13 +7,7 @@ const Comments = ({ url }) => {
     identifier: url,
   };
 
-  return (
-    <div>
-      {/* <CommentCount config={disqusConfig} placeholder={'...'} /> */}
-
-      <Disqus config={disqusConfig} />
-    </div>
-  );
+  return <Disqus config={disqusConfig} />;
 };
 
 export default Comments;

@@ -98,6 +98,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+    const siteUrl = get(this.props, 'data.site.siteMetadata.siteUrl');
     let {
       previous,
       next,
@@ -250,7 +251,7 @@ class BlogPostTemplate extends React.Component {
             </ul>
           </nav>
         </aside>
-        <Comments url={languageLink(lang)} />
+        <Comments url={`${siteUrl}${languageLink(lang)}`} />
       </Layout>
     );
   }
@@ -264,6 +265,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

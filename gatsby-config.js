@@ -193,12 +193,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: [
-          `/confirm/`, 
-          `/react-components-unsubscribed/`, 
-          `/thanks/`
-        ]
-      }
-    }
+        exclude: [`/confirm/`, `/react-components-unsubscribed/`, `/thanks/`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `cabyas-blog`,
+      },
+    },
   ],
 };

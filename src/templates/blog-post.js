@@ -10,6 +10,7 @@ import Signup from '../components/Signup';
 import Panel from '../components/Panel';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import { rhythm, scale } from '../utils/typography';
+import Comments from '../components/Comments';
 import {
   codeToLanguage,
   createLanguageLink,
@@ -17,7 +18,7 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 
-import defaultImage from '../assets/social-image.jpg'
+import defaultImage from '../assets/social-image.jpg';
 
 const GITHUB_USERNAME = 'YasielCabrera';
 const GITHUB_REPO_NAME = 'cabyas.com';
@@ -249,6 +250,7 @@ class BlogPostTemplate extends React.Component {
             </ul>
           </nav>
         </aside>
+        <Comments url={languageLink(lang)} />
       </Layout>
     );
   }

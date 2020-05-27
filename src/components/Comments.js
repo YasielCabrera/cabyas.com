@@ -1,10 +1,11 @@
 import React from 'react';
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+import { Disqus } from 'gatsby-plugin-disqus';
 
-const Comments = ({ url }) => {
+const Comments = ({ url, title }) => {
   let disqusConfig = {
     url: url,
     identifier: url,
+    title: title,
   };
 
   return <Disqus config={disqusConfig} />;

@@ -251,7 +251,10 @@ class BlogPostTemplate extends React.Component {
             </ul>
           </nav>
         </aside>
-        <Comments url={`${siteUrl}${languageLink(lang)}`} />
+        <Comments
+          url={`${siteUrl}${languageLink(lang)}`}
+          title={post.frontmatter.title}
+        />
       </Layout>
     );
   }

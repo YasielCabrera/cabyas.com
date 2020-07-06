@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Yasiel Cabrera <yasiel.cabrera@mail.cabyas.com>",
   "bugs": {
-    "url": "https://github.com/gaearon/overreacted.io/issues"
+    "url": "https://github.com/YasielCabrera/cabyas.com/issues"
   },
   "dependencies": {
     "gatsby": "^2.0.76",
@@ -59,8 +59,6 @@
     "start": "npm run develop",
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "now-build": "gatsby build",
-    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) overreacted.io",
-    "dry": "yarn build && cp now.json public/ && cd public && now",
     "js-to-jsx": "node src/utils/js-to-jsx"
   },
   "husky": {

@@ -200,7 +200,7 @@ class BlogPostTemplate extends React.Component {
               fontFamily: systemFont,
             }}
           >
-            {/* <Signup cta={post.frontmatter.cta} /> */}
+            <Signup cta={post.frontmatter.cta} />
           </div>
           <h3
             style={{

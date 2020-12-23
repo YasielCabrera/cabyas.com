@@ -8,7 +8,7 @@ Django is amazing! If you're still not sure, I won't try to convince you with wo
 
 There are many reasons why Django is my favorite framework, but without a doubt, the number one is because, like the JQuery slogan, I can do more writing less. Django has earned one of the top positions among frameworks that allow rapid application development thanks to the amount of built-in components it has by default, but also because it allows a high level of code reusability.
 
-In this tutorial we will analyze an example where the four basic operations that are never missing in most web applications are used: Create, Read, Update and Delete (CRUD). In the example I created for this tutorial I use Bootstrap 4 for the frontend and Class Based Views (VBC) for all the `Views`.
+In this tutorial we will analyze an example where the four basic operations that are never missing in most web applications are used: Create, Read, Update and Delete (CRUD). In the example I created for this tutorial I use Bootstrap 4 for the frontend and Class Based Views (CBV) for all the `Views`.
 
 The example is simple. As there are currently many programming languages out there and we are always learning, we will create a web application where we will store all the languages we know. Useful ehh? Nah, but it's still useful to learn 😜
 

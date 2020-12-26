@@ -2,6 +2,7 @@
 title: Generando datos falsos para etapas de prueba o desarrollo
 date: '2020-12-20'
 spoiler: Generar datos para ver la aplicación como la vería un usuario consume demasiado, mejor automatizar el proceso.
+image: image.png
 ---
 
 > Si te toma más de 90 segundos hacer una tarea automatízala.

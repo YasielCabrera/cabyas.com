@@ -150,7 +150,10 @@ class BlogPostTemplate extends React.Component {
           lang={lang}
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler}
-          image={defaultImage}
+          image={
+            post.frontmatter?.image?.childImageSharp?.fluid?.srcWebp ||
+            defaultImage
+          }
           slug={post.fields.slug}
         />
         <main>
@@ -280,6 +283,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         spoiler
         cta
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1000, maxHeight: 500, quality: 80) {
+              srcWebp
+            }
+          }
+        }
       }
       fields {
         slug

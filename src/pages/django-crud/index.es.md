@@ -2,6 +2,7 @@
 title: Django CRUD
 date: '2020-06-04'
 spoiler: Cómo implementar CRUD con Django utilizando Vistas Basadas en Clases reutilizando la mayor cantidad de código posible y sin repetir una línea de código dos veces.
+image: image.png
 ---
 
 ¡Django es increíble! Si aún no estás seguro de ello, no intentaré convencerte con palabras sino con código.

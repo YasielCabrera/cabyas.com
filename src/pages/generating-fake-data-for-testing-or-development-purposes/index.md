@@ -2,6 +2,7 @@
 title: Generating fake data for testing or development purposes
 date: '2020-12-20'
 spoiler: Generate data to see the application as an user would see it consumes too much, better to automate the process.
+image: image.png
 ---
 
 > If a task takes more than 90 seconds, automate it.

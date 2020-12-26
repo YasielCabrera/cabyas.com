@@ -2,6 +2,7 @@
 title: Comandos de administración de Django
 date: '2020-05-11'
 spoiler: 'Guía completa de cómo y cuándo crear, probar y personalizar comandos en Django.'
+image: image.png
 ---
 
 Usamos comandos de Django desde que comenzamos a crear un proyecto, una app o iniciamos el servidor de desarrollo. Probablemente los comandos para realizar estas operaciones (`startproject`, `startapp` y `runserver`) sean los más conocidos, pero existen muchos más y también podemos escribir nuestros propios comandos.

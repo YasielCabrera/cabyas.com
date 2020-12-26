@@ -2,6 +2,7 @@
 title: 'Python Decouple: A strict separation of config from code'
 date: '2020-12-25'
 spoiler: 'Decouple helps you to organize your settings so that you can change parameters without having to redeploy your app.'
+image: image.png
 ---
 
 All web applications depend on configuration parameters that are environment dependent. For example, **Django** applications have some of these parameters: database URL, secret keys, allowed hosts, debug, mail host, etc. Most of these parameters are not only environment dependent, but many of them are highly sensitive (like database credentials, for example). 

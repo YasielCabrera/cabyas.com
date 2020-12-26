@@ -2,6 +2,7 @@
 title: Django Management Commands
 date: '2020-05-11'
 spoiler: 'Complete guide about how and when create, test and customize Django Management Commands.'
+image: image.png
 ---
 
 We've been using Django commands since we started creating a project, an app or started the development server. The commands to perform these operations (`startproject`, `startapp` and `runserver`) are probably the most well known, but there are many more, and we can also write our own commands.

@@ -2,6 +2,7 @@
 title: 'Python Decouple: Separando la configuración del código'
 date: '2020-12-25'
 spoiler: 'Decouple te ayuda a organizar tus configuraciones para que puedas cambiar los parámetros sin tener que volver a desplegar tu aplicación.'
+image: es_image.png
 ---
 
 Todas las aplicaciones web dependen de parámetros de configuración que son dependientes del ambiente. Por ejemplo, las aplicaciones **Django** tienen algunos de estos parámetros: URL de la base de datos, claves secretas, hosts permitidos, debug, host de correo, etc. La mayoría de esos parámetros no solo son dependientes del ambiente, sino que muchos de ellos son altamente sensibles (como las credenciales de la base de datos, por ejemplo). 

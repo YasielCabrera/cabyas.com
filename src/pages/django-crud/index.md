@@ -2,6 +2,7 @@
 title: Django CRUD
 date: '2020-06-04'
 spoiler: How to implement CRUD with Django using Class-based Views reusing as much code as possible and without repeating a line of code twice.
+image: image.png
 ---
 
 Django is amazing! If you're still not sure, I won't try to convince you with words but with code.

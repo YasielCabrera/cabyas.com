@@ -42,7 +42,7 @@ PERCENTILE=90%%
 #COMMENTED=42
 ```
 
-Using fichero `.env`:
+Using `.env` file:
 
 ```ini
 DEBUG=True
